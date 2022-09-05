@@ -1,4 +1,5 @@
 .header{
+    z-index: 999;
     width: 100%;
     height: 50px;
     background-color: #000563;
@@ -23,11 +24,12 @@
 }
 
 .footerwrap{
+    z-index: 999;
     position: fixed ;
     bottom: 0px;
     width: 100%;
     height: fit-content;
-    left: 0px;
+
 }
 
 .footer{
@@ -46,3 +48,29 @@
     animation: slidein-2 1.2s;
 }
 
+.main-right{
+    background-color: #353262;
+    width: 50%;
+    height: 100vh;
+}
+
+.main-left{
+    background-color: white;
+    width: 50%;
+    height: 100px;
+    height: 100vh;
+    
+}
+
+.mainblock{
+    display: flex;
+    height: 100%;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0px !important;
+    margin: 0px !important;
+}
