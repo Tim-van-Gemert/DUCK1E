@@ -81,9 +81,48 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .duck{
     height: 350px;
     width: auto;
+}
+
+.duck-text{
+    padding: 25px;
+    background-color: white;
+    font-size: 32px;
+    border-bottom-left-radius: 0px !important;
+    text-align: left;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+.textcite{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 20%;
+    background: linear-gradient(45deg,  transparent 60%, rgba(255,255,255,1) 50%);
+}
+
+.speech-box{
+    padding: 5% !important;
+    padding-bottom: unset !important;
+    position: relative;
+    animation: TextBubble-fade-in 1s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes TextBubble-fade-in {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
