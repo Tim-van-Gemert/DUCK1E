@@ -87,6 +87,7 @@ html, body{
 .duck{
     height: 350px;
     width: auto;
+    animation: Duck-vibrate 1s ease-in-out 0s 1 normal forwards;
 }
 
 .duck-text{
@@ -124,5 +125,31 @@ html, body{
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes Duck-vibrate {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
 	}
 }
