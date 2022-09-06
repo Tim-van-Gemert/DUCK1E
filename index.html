@@ -25,26 +25,35 @@
         <div class="formblock">
             <form>
                 <!-- Wat denk je dat het probleem is? -->
-                <textarea class="input-fields" id="question1"></textarea>
+                <textarea class="input-fields" id="question1">
+                    
+
+function reset_animation() {
+    var el = document.getElementById('duck');
+    el.style.animation = 'none';
+    el.offsetHeight; /* trigger reflow */
+    el.style.animation = null; 
+}
+                    </textarea>
 
                 <!-- Waar in je code denk je dat het probleem is? -->
-                <textarea class="input-fields" id="question2"></textarea>
+                <textarea class="input-fields" id="question2">input 2</textarea>
 
                 
                 <!-- Waar in je code denk je dat het probleem is? -->
-                <textarea class="input-fields" id="question3"></textarea>
+                <textarea class="input-fields" id="question3">input 3</textarea>
 
 
                 <!-- Zou dit anders opgelost kunnen worden? -->
-                <textarea class="input-fields" id="question4"></textarea>
+                
                 
 
                 <!-- Heb je mede studenten om hulp gevraagd? -->
-                <textarea class="input-fields" id="question5"></textarea>
+                <textarea class="input-fields" id="question5">input 5</textarea>
 
 
                 <!-- Kan je verder? -->
-                <textarea class="input-fields" id="question6"></textarea>
+                <textarea class="input-fields" id="question6"> input 6</textarea>
 
             </form>
             <div class="buttonblock">
@@ -58,7 +67,10 @@
                 <button class="button form-button" id="button-3" onclick="button_question_three(), reset_animation()">Next</button>
 
                 <!-- Heb je mede studenten om hulp gevraagd? -->
-                <button class="button form-button" id="button-4" onclick="button_question_four(), reset_animation()">Next</button>
+                <div class="buttonblock" id="question4">
+                    <button class="button">Yes</button>
+                    <button class="button">No</button>
+                </div>
 
                 <!-- Kan je verder? -->
                 <button class="button form-button" id="button-5" onclick="button_question_four(), reset_animation()">Next</button>

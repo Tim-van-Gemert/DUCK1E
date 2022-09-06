@@ -28,8 +28,15 @@ function button_question_two() {
 };
 
 
+
 function button_question_three() {
-    document.getElementById('question3').style.display = 'none';
+
+    document.getElementById('question1').style.marginBottom = '5%';
+    document.getElementById('question1').style.pointerEvents = "none";
+
+
+    document.getElementById('question3').style.display = 'flex';
+    document.getElementById('question1').style.display = 'flex';
     document.getElementById('question4').style.display = 'flex';
 
     document.getElementById('button-3').style.display = 'none';
