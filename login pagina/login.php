@@ -71,6 +71,21 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </div>
 
     
+<div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+</div >
+    
 
     <div class="footerwrap">
     <div class="abovefooter"></div>
