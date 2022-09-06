@@ -7,7 +7,7 @@
 }
 
 html,body {
-    background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%) !important; 
+    background: linear-gradient(45deg, #28313B 0%, #485461 100%) !important; 
     height: 100vh;
 
 }
@@ -64,6 +64,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 25px;
   }
 
   button {
@@ -74,6 +75,7 @@ input[type=text], input[type=password] {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 25px;
   }
 
   button:hover {
@@ -95,5 +97,15 @@ input[type=text], input[type=password] {
     align-items: center;
     display: flex;
   }
+
+  .title {
+    font-family: "Yu Gothic Light";
+    font-size: 45px !important;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
 
 
