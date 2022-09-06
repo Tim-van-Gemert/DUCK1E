@@ -108,7 +108,7 @@ html, body{
 .duck{
     height: 350px;
     width: auto;
-
+    animation: Duck-vibrate 1s ease-in-out 0s 1 normal forwards;
 }
 
 .wiggle{

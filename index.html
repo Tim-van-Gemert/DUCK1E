@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-
     <div class="header-wrap">
         <div class="header"><div class="title">DUCK1E</div></div>
         <div class="belowheader"></div>
     </div>
-    
     <center>
     <div class="mainblock">
     <div class="main-left">
@@ -45,19 +43,19 @@
             </form>
             <div class="buttonblock">
                 <!-- Wat denk je dat het probleem is? -->
-                <button class="button form-button" id="button-1" onclick="button_question_one()">Volgende</button>
+                <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation()">Volgende</button>
 
                 <!-- Waar in je code denk je dat het probleem is? -->
-                <button class="button form-button" id="button-2" onclick="button_question_two()">Volgende</button>
+                <button class="button form-button" id="button-2" onclick="button_question_two(), reset_animation()">Volgende</button>
 
                 <!-- Zou dit anders opgelost kunnen worden? -->
-                <button class="button form-button" id="button-3" onclick="button_question_three()">Volgende</button>
+                <button class="button form-button" id="button-3" onclick="button_question_three(), reset_animation()">Volgende</button>
 
                 <!-- Heb je mede studenten om hulp gevraagd? -->
-                <button class="button form-button" id="button-4" onclick="button_question_four()">Volgende</button>
+                <button class="button form-button" id="button-4" onclick="button_question_four(), reset_animation()">Volgende</button>
 
                 <!-- Kan je verder? -->
-                <button class="button form-button" id="button-5" onclick="button_question_four()">Volgende</button>
+                <button class="button form-button" id="button-5" onclick="button_question_four(), reset_animation()">Volgende</button>
             </div>
         </div>
     </div>
@@ -76,13 +74,11 @@
 
             <div class="textcite" ></div>
             </div>
-            <img src="/DUCK1E.png" class="duck" id="duck"">
+            <img src="DUCK1E.png" class="duck" id="duck"">
         </div>
     </div>
     </div>
     </center>
-
-
     <div class="footerwrap">
     <div class="abovefooter"></div>
     <div class="footer p-2">

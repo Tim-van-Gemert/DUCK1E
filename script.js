@@ -66,13 +66,9 @@ function button_question_five() {
 
 
 
-// element.addEventListener("click", function(e) {
-//   e.preventDefault;
-  
-//   const duck = document.getElementById('duck')
-//   duck.classList.remove("wiggle");
-  
-//   void duck.offsetWidth;
-  
-//     duck.classList.add("wiggle");
-// }, false);
+function reset_animation() {
+    var el = document.getElementById('duck');
+    el.style.animation = 'none';
+    el.offsetHeight; /* trigger reflow */
+    el.style.animation = null; 
+  }
