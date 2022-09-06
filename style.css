@@ -1,10 +1,20 @@
 .header{
-    z-index: 999;
     width: 100%;
     height: 50px;
     background-color: #000563;
     padding: unset ;
-    
+}
+
+
+.title{
+    font-family: "Yu Gothic Light";
+    font-size: 45px !important;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left:2%;
+
 }
 
 .belowheader{
@@ -15,7 +25,9 @@
 }
 
 
+
 .header-wrap{
+    z-index: 999 !important;
     position: fixed ;
     top: 0px;
     left: 0px;
@@ -57,9 +69,13 @@
 .main-left{
     background-color: white;
     width: 50%;
-    height: 100px;
     height: 100vh;
-    
+    border: #000563;
+    box-shadow: 3px 0 16px black;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainblock{
@@ -82,6 +98,12 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+
+
+.title{
+    font-size: 22px;
 }
 
 .duck{
@@ -152,4 +174,123 @@ html, body{
 	100% {
 		transform: translate(0);
 	}
+}
+
+
+@keyframes entrance-question {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+#question2, #question3, #question4, #question5, #question6 {
+    display: none;
+}
+
+#button-2, #button-3, #button-4, #button-5, #button-6 {
+    display: none;
+}
+
+
+#question2{
+    background-color: blue !important
+}
+
+#question3{
+    background-color: red !important
+}
+
+#question4{
+    background-color: pink !important
+}
+
+#question5{
+    background-color: orange !important
+}
+
+#question6{
+    background-color: black !important
+}
+
+#question-2-text, #question-3-text, #question-4-text, #question-5-text {
+    display: none;
+}
+
+.input-fields{
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 16px #00000029;
+
+    opacity: 1;
+    border: none;
+    width: 80vh;
+    font-size: 22px;
+    resize: none ;
+    font-size: 40px;
+
+    height: 200px;
+    animation: entrance-question 1s ease 0s 1 normal forwards;
+}
+
+
+
+.contentblock{
+    background-color: red;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.formblock{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.button{
+    border: none;
+    width: 20vh;
+    height: 5vh;
+    font-size: 22px;
+    resize: none ;
+    transition: .2s ease-in-out;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 16px #00000029;
+    margin-top: 5%;
+    opacity: 1;
+    border: none;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button:hover{
+    transform: scale(1.05);
+    background-color: #353262;
+    color: white;
+}
+
+
+
+
+.buttonblock{
+    width: 80vh;
+    display: flex;
 }

@@ -6,22 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
     <div class="header-wrap">
-        <div class="header padding-2"></div>
-        <div class="belowheader text-right "></div>
+        <div class="header"><div class="title">DUCK1E</div></div>
+        <div class="belowheader"></div>
     </div>
     
     <center>
     <div class="mainblock">
-    <div class="main-left"></div>
+    <div class="main-left">
+        <div class="formblock">
+            <form>
+                <!-- Wat denk je dat het probleem is? -->
+                <textarea class="input-fields" id="question1"></textarea>
+
+                <!-- Waar in je code denk je dat het probleem is? -->
+                <textarea class="input-fields" id="question2"></textarea>
+
+                
+                <!-- Waar in je code denk je dat het probleem is? -->
+                <textarea class="input-fields" id="question3"></textarea>
+
+
+                <!-- Zou dit anders opgelost kunnen worden? -->
+                <textarea class="input-fields" id="question4"></textarea>
+                
+
+                <!-- Heb je mede studenten om hulp gevraagd? -->
+                <textarea class="input-fields" id="question5"></textarea>
+
+
+                <!-- Kan je verder? -->
+                <textarea class="input-fields" id="question6"></textarea>
+
+            </form>
+            <div class="buttonblock">
+                <!-- Wat denk je dat het probleem is? -->
+                <button class="button" id="button-1" onclick="button_question_one()" >Volgende</button>
+
+                <!-- Waar in je code denk je dat het probleem is? -->
+                <button class="button" id="button-2" onclick="button_question_two()" >Volgende</button>
+
+                <!-- Zou dit anders opgelost kunnen worden? -->
+                <button class="button" id="button-3" onclick="button_question_three()" >Volgende</button>
+
+                <!-- Heb je mede studenten om hulp gevraagd? -->
+                <button class="button" id="button-4" onclick="button_question_four()" >Volgende</button>
+
+                <!-- Kan je verder? -->
+                <button class="button" id="button-5" onclick="button_question_four()" >Volgende</button>
+            </div>
+        </div>
+    </div>
     <div class="main-right">
         <div class="duckblock">
             <div class="speech-box">
-            <div class="duck-text">Wat denk je dat het probleem is? test test test test test</div> 
-            <div class="textcite"></div>
+            <div class="duck-text" id="question-1-text">Wat denk je dat het probleem is? </div> 
+
+            <div class="duck-text" id="question-2-text">Waar in je code denk je dat het probleem is?</div> 
+
+            <div class="duck-text" id="question-3-text">Zou dit anders opgelost kunnen worden?</div> 
+
+            <div class="duck-text" id="question-4-text">Heb je mede studenten om hulp gevraagd?</div> 
+
+            <div class="duck-text" id="question-5-text">Kan je verder?</div> 
+
+            <div class="textcite" ></div>
             </div>
             <img src="/DUCK1E.png" class="duck">
         </div>
