@@ -8,6 +8,8 @@ function button_question_one() {
 
     document.getElementById('question-1-text').style.display = 'none';
     document.getElementById('question-2-text').style.display = 'flex';
+
+    document.getElementById('summary').style.display = 'none';
     
 
 };
@@ -71,4 +73,6 @@ function reset_animation() {
     el.style.animation = 'none';
     el.offsetHeight; /* trigger reflow */
     el.style.animation = null; 
-  }
+}
+
+

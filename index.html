@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+
+      
 </head>
 <body>
     <div class="header-wrap">
@@ -16,6 +19,9 @@
     <center>
     <div class="mainblock">
     <div class="main-left">
+        <div class="summary" id="summary">
+            <p class="intro">Hi, this is DUCK1E!<br> you can always visit him if you are stuck on a bug or issue! Just answer his questions and reflect on your answers afterwards :) </p>
+        </div>
         <div class="formblock">
             <form>
                 <!-- Wat denk je dat het probleem is? -->
@@ -43,7 +49,7 @@
             </form>
             <div class="buttonblock">
                 <!-- Wat denk je dat het probleem is? -->
-                <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation()">Volgende</button>
+                <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation(), playAudio()">Volgende</button>
 
                 <!-- Waar in je code denk je dat het probleem is? -->
                 <button class="button form-button" id="button-2" onclick="button_question_two(), reset_animation()">Volgende</button>

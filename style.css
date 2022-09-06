@@ -75,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .mainblock{
@@ -238,7 +239,7 @@ html, body{
     resize: none ;
     font-size: 40px;
 
-    height: 200px;
+    height: 300px;
     animation: entrance-question 1s ease 0s 1 normal forwards;
 }
 
@@ -256,7 +257,6 @@ html, body{
 }
 
 .formblock{
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -296,4 +296,19 @@ html, body{
 .buttonblock{
     width: 80vh;
     display: flex;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20% ;
+}
+
+.intro{
+    font-size: 40px;
+    text-align: left;
+    max-width: 85vh;
 }
