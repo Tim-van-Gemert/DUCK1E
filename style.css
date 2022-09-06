@@ -124,6 +124,7 @@ html, body{
     text-align: left;
     max-width: 600px;
     word-wrap: break-word;
+    font-family: "Yu Gothic Light";
 }
 
 .textcite{
@@ -308,7 +309,8 @@ html, body{
 }
 
 .intro{
-    font-size: 40px;
+    font-size: 35px;
     text-align: left;
     max-width: 85vh;
+    font-family: "Yu Gothic Light";
 }
