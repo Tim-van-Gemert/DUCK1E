@@ -133,7 +133,7 @@ html, body{
     height: 45px;
     position: absolute;
     left: 20%;
-    background: linear-gradient(45deg,  transparent 60%, rgba(255,255,255,1) 50%);
+    clip-path: polygon(76% 0, 76% 60%, 76% 100%, 63% 81%, 30% 39%, 0% 0%);
 }
 
 .speech-box{
@@ -202,7 +202,6 @@ html, body{
 #button-2, #button-3, #button-4, #button-5, #button-6 {
     display: none;
 }
-
 
 /* #question2{
     background-color: blue !important
@@ -284,6 +283,7 @@ html, body{
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-right: 5%;
 }
 
 .button:hover{
@@ -326,4 +326,16 @@ html, body{
     font-family: "Yu Gothic Light";
 }
 
-  }
+}
+
+#darkmode_button{
+    font-family: "Yu Gothic Light";
+    font-size: 25px !important;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left:15%;
+    background-color: #000563;
+    border: none;
+}

@@ -13,14 +13,14 @@
 </head>
 <body>
     <div class="header-wrap">
-        <div class="header"><div class="title">DUCK1E</div></div>
+        <div class="header"><div class="title">DUCK1E</div><button onclick="Darkmode()" id="darkmode_button">D4RKMODE</button></div>
         <div class="belowheader"></div>
     </div>
     <center>
     <div class="mainblock">
-    <div class="main-left">
+    <div class="main-left" id="main-left">
         <div class="summary" id="summary">
-            <p class="intro">Hi, this is DUCK1E!<br> you can always visit him if you are stuck on a bug or issue! Just answer his questions and reflect on your answers afterwards :) </p>
+            <p class="intro" id="intro">Hi, this is DUCK1E!<br> you can always visit him if you are stuck on a bug or issue! Just answer his questions and reflect on your answers afterwards :) </p>
         </div>
         <div class="formblock">
             <form>
@@ -58,7 +58,8 @@ function reset_animation() {
             </form>
             <div class="buttonblock">
                 <!-- Wat denk je dat het probleem is? -->
-                <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation(), playAudio()">Next</button>
+                <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation()">Next</button>
+                <button class="button form-button" id="button-1-1" onclick="">Its not code related</button>
 
                 <!-- Waar in je code denk je dat het probleem is? -->
                 <button class="button form-button" id="button-2" onclick="button_question_two(), reset_animation()">Next</button>
@@ -77,10 +78,10 @@ function reset_animation() {
             </div>
         </div>
     </div>
-    <div class="main-right">
+    <div class="main-right" >
         <div class="duckblock">
             <div class="speech-box">
-            <div class="duck-text" id="question-1-text">Wat denk je dat het probleem is? </div> 
+            <div class="duck-text" id="question-1-text">Please Copy and pase your code here!</div> 
 
             <div class="duck-text" id="question-2-text">Waar in je code denk je dat het probleem is?</div> 
 
@@ -90,7 +91,7 @@ function reset_animation() {
 
             <div class="duck-text" id="question-5-text">Kan je verder?</div> 
 
-            <div class="textcite" ></div>
+            <div class="textcite" id="textcite"></div>
             </div>
             <img src="DUCK1E.png" class="duck" id="duck"">
         </div>
