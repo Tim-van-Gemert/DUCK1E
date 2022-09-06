@@ -63,7 +63,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     
         <input id="password"  type="password" placeholder="Enter Password" name="password" required>
     
-        <button type="submit" value="Login">Login</button>
+        <form action="overzicht.html">
+         <button type="submit">Login</button>
+      </form>
 		</form>
       </div>
     </div>
