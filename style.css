@@ -17,6 +17,16 @@
 
 }
 
+.credits{
+    font-family: "Yu Gothic Light";
+    font-size: 45px !important;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 15%;
+    right:2%;
+}
+
 .belowheader{
     width: 100%;
     height: 50px;
@@ -115,6 +125,14 @@ html, body{
     height: 350px;
     width: auto;
     animation: Duck-vibrate 1s ease-in-out 0s 1 normal forwards;
+    transition: ease-in-out .2s;
+
+}
+
+.duckwrap{
+    animation: Duck-entrance 1s ease-in-out 0s 1 normal forwards;
+    transition: ease-in-out .2s;
+    z-index: 9999;
 }
 
 .wiggle{
@@ -145,7 +163,7 @@ html, body{
     padding: 5% !important;
     padding-bottom: unset !important;
     position: relative;
-    animation: TextBubble-fade-in 1s ease-in-out 0s 1 normal forwards;
+    animation: TextBubble-fade-in 1.1s ease-in-out 0s 1 normal forwards;
 }
 
 @keyframes TextBubble-fade-in {
@@ -159,6 +177,20 @@ html, body{
 		transform: translateY(0);
 	}
 }
+
+
+@keyframes Duck-entrance {
+	0% {
+		transform: translateX(250px);
+	}
+
+	100% {
+
+		transform: translateX(0);
+	}
+}
+
+
 
 @keyframes Duck-vibrate {
 	0% {
@@ -199,6 +231,18 @@ html, body{
 	}
 }
 
+
+@keyframes FadeInSummary {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 #question2, #question3, #question4, #question5, #question6, #question8 {
     display: none;
@@ -271,6 +315,7 @@ html, body{
     align-items: center;
     display: flex;
     margin-right: 5%;
+    animation: entrance-question 1s ease 0s 1 normal forwards;
 }
 
 .button:hover{
@@ -294,6 +339,7 @@ html, body{
     align-items: flex-start;
     width: 100%;
     padding-left: 25% ;
+    animation: FadeInSummary 1s ease 0s 1 normal forwards;
 }
 
 .intro{
@@ -321,7 +367,7 @@ html, body{
     display: flex;
     color: white;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left:15%;
     background-color: #000563;
     border: none;
@@ -345,3 +391,5 @@ html, body{
     font-size: 20px;
 }
 }
+
+
