@@ -63,6 +63,9 @@
     background-color: #353262;
     width: 50%;
     height: 100vh;
+    background-image: url('hexagon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-left{
@@ -288,7 +291,7 @@ html, body{
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    padding-left: 21% ;
+    padding-left: 25% ;
 }
 
 .intro{

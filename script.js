@@ -8,6 +8,7 @@ function button_question_one() {
     document.getElementById('summary').style.display = 'none';
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
+    document.getElementById("question1").style.pointerEvents = "none";
 };
 
 
@@ -20,9 +21,10 @@ function button_question_two() {
     document.getElementById('question2').style.marginBottom = '5%';
     document.getElementById('formblock').style.paddingTop = '25%';
     document.getElementById('formblock').style.paddingBottom = '10%';
-    document.getElementById('formblock').style.overflow = 'scroll';
+    document.getElementById('formblock').style.overflow = 'hidden';
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
+    document.getElementById("question1").style.pointerEvents = "none";
 };
 
 
@@ -40,6 +42,7 @@ function button_question_three() {
     document.getElementById('question-5-text').style.display = 'none';
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
+    document.getElementById("question1").style.pointerEvents = "none";
 };
 
 
@@ -93,20 +96,31 @@ function reset_animation() {
 }
 
 function Darkmode(){
-    const ButtonCollection = document.getElementsByClassName("button");
-    ButtonCollection[0].style.backgroundColor = "#3E3C3E";
-    ButtonCollection[0].style.color = "white";
-    ButtonCollection[1].style.backgroundColor = "#3E3C3E";
-    ButtonCollection[1].style.color = "white";
-    const QuestionCollection = document.getElementsByClassName("duck-text");
-    QuestionCollection[0].style.backgroundColor = "#3E3C3E";
-    QuestionCollection[0].style.color = "white";
-    const FieldCollection = document.getElementsByClassName("input-fields");
-    FieldCollection[0].style.backgroundColor = "#3E3C3E";
-    FieldCollection[0].style.color = "white";
-    document.getElementById('textcite').style.backgroundColor = '#3E3C3E';
+
+    buttoncolor = document.getElementsByClassName('button');
+    for (var i = 0; i < buttoncolor.length; i++) {
+        buttoncolor[i].style.backgroundColor="#3E3C3E";
+        buttoncolor[i].style.color="white";
+    }
+
+    fieldcolor = document.getElementsByClassName('input-fields');
+    for (var i = 0; i < fieldcolor.length; i++) {
+        fieldcolor[i].style.backgroundColor="#3E3C3E";
+        fieldcolor[i].style.color="white";
+    };
+
+    questionfields = document.getElementsByClassName('duck-text');
+    for (var i = 0; i < questionfields.length; i++) {
+        questionfields[i].style.backgroundColor="#2A282A";
+        questionfields[i].style.color="white";
+    };
+
+    document.getElementById('textcite').style.backgroundColor = '#2A282A';
     document.getElementById('main-left').style.backgroundColor = '#2A282A';
+    document.getElementById('main-right').style.backgroundColor = '#353231';
     document.getElementById('intro').style.color = 'white';
 
+    document.getElementById("darkmode_button").style.innerHTML = "L1GHTMODE";
 
+    
 }
