@@ -121,7 +121,7 @@ html, body{
     background-color: white;
     font-size: 32px;
     border-bottom-left-radius: 0px !important;
-    text-align: center;
+    text-align: left;
     max-width: 650px;
     word-wrap: break-word;
     font-family: "Yu Gothic Light";
