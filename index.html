@@ -55,6 +55,8 @@ function reset_animation() {
                 <!-- Are you able to continu? -->
                 <textarea class="input-fields" id="question6"> input 6</textarea>
 
+                <textarea class="input-fields" id="question8"> input 8</textarea>
+
             </form>
             <div class="buttonblock">
                 <!-- Where in your code do you think the issue is? -->
@@ -65,7 +67,7 @@ function reset_animation() {
 
                 <!-- Do you know a potential different way to solve the problem?-->
                 <div class="buttonblock" id="question3-buttons">
-                    <button onclick="button_question_four(), reset_animation()" class="button">Yes</button>
+                    <button onclick="button_question_four_one(), reset_animation()" class="button">Yes</button>
                     <button onclick="button_question_three(), reset_animation()" class="button" >No</button>
                 </div>
 
@@ -75,9 +77,7 @@ function reset_animation() {
                     <button onclick="button_question_three_one(), reset_animation()" class="button" >No</button>
                 </div>
 
-                <!-- How could solve this problem?
-
-                <! Are you able to continu? -->
+                <!-- Are you able to continu? -->
                 <div class="buttonblock" id="question5-buttons">
                     <button href="" onclick="reset_animation()" class="button">Yes</button>
                     <button onclick="button_question_three(), reset_animation()" class="button" >No</button>
@@ -86,6 +86,11 @@ function reset_animation() {
                 <div class="buttonblock" id="question6-buttons">
                     <button onclick="button_question_four(), reset_animation()" class="button">Yes, i understand now </button>
                     <button onclick="button_question_three_one(), reset_animation()" class="button" >Yes, but the student didn't know the answer.</button>
+                </div>
+
+                <!-- How could solve this problem? -->
+                <div class="buttonblock" id="question8-buttons">
+                    <button class="button form-button" id="button-8" onclick="button_question_four(), reset_animation()">Next</button>
                 </div>
 
 
@@ -108,6 +113,9 @@ function reset_animation() {
             <div class="duck-text" id="question-6-text">You should take a look at the problem with a coach</div> 
 
             <div class="duck-text" id="question-7-text">You should contact other students to see if the can help you with yout issue!</div> 
+
+            <div class="duck-text" id="question-8-text">How could solve this problem?</div> 
+
 
             <div class="textcite" id="textcite"></div>
             </div>

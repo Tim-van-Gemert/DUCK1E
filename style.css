@@ -92,6 +92,8 @@ html, body{
     overflow: hidden;
     padding: 0px !important;
     margin: 0px !important;
+    transition: .2s ease-in-out;
+    
 }
 
 .duckblock{
@@ -198,17 +200,17 @@ html, body{
 }
 
 
-#question2, #question3, #question4, #question5, #question6 {
+#question2, #question3, #question4, #question5, #question6, #question8 {
     display: none;
 }
 
-#button-2, #button-3, #button-4, #button-5, #button-6, #question3-buttons,  #question4-buttons, #question5-buttons, #question6-buttons, #question7-buttons {
+#button-2, #button-3, #button-4, #button-5, #button-6, #question3-buttons,  #question4-buttons, #question5-buttons, #question6-buttons, #question7-buttons, #question8-buttons {
     display: none;
     justify-content: space-around;
 }
 
 
-#question-2-text, #question-3-text, #question-4-text, #question-5-text, #question-6-text, #question-7-text {
+#question-2-text, #question-3-text, #question-4-text, #question-5-text, #question-6-text, #question-7-text, #question-8-text {
     display: none;
 }
 
