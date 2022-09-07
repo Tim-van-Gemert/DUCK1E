@@ -63,28 +63,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     
         <input id="password"  type="password" placeholder="Enter Password" name="password" required>
     
-        <form action="overzicht.html">
+        <form action="eindscherm.html">
          <button type="submit">Login</button>
       </form>
 		</form>
       </div>
     </div>
 
-    
-<div class="area" >
-        <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
-</div >
+ 
     
 
     <div class="footerwrap">
