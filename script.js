@@ -95,6 +95,10 @@ function reset_animation() {
     el.style.animation = null; 
 }
 
+function succes() {
+window.location.href = "eindscherm.html";
+}
+
 function Darkmode(){
 
     buttoncolor = document.getElementsByClassName('button');

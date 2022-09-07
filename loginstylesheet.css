@@ -1,0 +1,106 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #000563;
+    padding: unset ;
+    
+}
+
+html,body {
+    background: linear-gradient(45deg, #000563 20%, #353262 80%) !important; 
+    height: 100vh;
+
+}
+
+.belowheader{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(315deg, transparent 70%, #000563  0%);
+    padding: unset ;
+}
+
+
+.header-wrap{
+    position: fixed ;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+.footerwrap{
+    position: fixed ;
+    bottom: 0px;
+    width: 100%;
+    height: fit-content;
+    left: 0px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #000563;
+    padding: unset ;
+    animation: slidein-2 1.2s;
+}
+
+.abovefooter{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(315deg, #000563 30%, transparent  0%);
+    padding: unset ;
+    animation: slidein-2 1.2s;
+}
+
+input[type=text], input[type=password] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+
+  button {
+    background-color: #000563;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+
+  }
+
+  .main-login-block{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+  }
+
+  .title {
+    font-family: "Yu Gothic Light";
+    font-size: 45px !important;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
