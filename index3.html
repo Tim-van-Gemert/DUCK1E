@@ -12,6 +12,11 @@
     <title>Speech To Text</title>
   </head>
   <body class="container pt-5 bg-dark">
+    <button id="btn">Click me</button>
+
+<div id="myDIV">
+  This is my DIV element.
+</div>
     <div class="mt-4" id="div_language">
       <h2 class="mb-3 text-light">Select Language</h2>
       <select class="form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
@@ -30,4 +35,18 @@
   </body>
   <script src="./language.js"></script>
 <script src="speechRecognition.js"></script>
+<script>
+const btn = document.getElementById('btn');
+
+// ✅ Toggle button text on click
+btn.addEventListener('click', function handleClick() {
+  const initialText = 'Click me';
+
+  if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn.textContent = 'Button clicked';
+  } else {
+    btn.textContent = initialText;
+  }
+});
+</script>
 </html>

@@ -126,5 +126,66 @@ function Darkmode(){
 
     document.getElementById("darkmode_button").style.innerHTML = "L1GHTMODE";
 
-    
+
 }
+
+const btn = document.getElementById('darkmode_button');
+
+// ✅ Toggle button text on click
+btn.addEventListener('click', function handleClick() {
+  const initialText = 'D4RKMODE';
+
+  if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn.textContent = 'L1GHTMODE';
+
+	buttoncolor = document.getElementsByClassName('button');
+    for (var i = 0; i < buttoncolor.length; i++) {
+        buttoncolor[i].style.backgroundColor="#3E3C3E";
+        buttoncolor[i].style.color="white";
+    }
+
+    fieldcolor = document.getElementsByClassName('input-fields');
+    for (var i = 0; i < fieldcolor.length; i++) {
+        fieldcolor[i].style.backgroundColor="#3E3C3E";
+        fieldcolor[i].style.color="white";
+    };
+
+    questionfields = document.getElementsByClassName('duck-text');
+    for (var i = 0; i < questionfields.length; i++) {
+        questionfields[i].style.backgroundColor="#2A282A";
+        questionfields[i].style.color="white";
+    };
+
+    document.getElementById('textcite').style.backgroundColor = '#2A282A';
+    document.getElementById('main-left').style.backgroundColor = '#2A282A';
+    document.getElementById('main-right').style.backgroundColor = '#353231';
+    document.getElementById('intro').style.color = 'white';
+
+  } else {
+
+		btn.textContent = 'D4RKMODE';
+	
+		buttoncolor = document.getElementsByClassName('button');
+		for (var i = 0; i < buttoncolor.length; i++) {
+			buttoncolor[i].style.backgroundColor="white";
+			buttoncolor[i].style.color="#3E3C3E";
+		}
+	
+		fieldcolor = document.getElementsByClassName('input-fields');
+		for (var i = 0; i < fieldcolor.length; i++) {
+			fieldcolor[i].style.backgroundColor="white";
+			fieldcolor[i].style.color="#3E3C3E";
+		};
+	
+		questionfields = document.getElementsByClassName('duck-text');
+		for (var i = 0; i < questionfields.length; i++) {
+			questionfields[i].style.backgroundColor="white";
+			questionfields[i].style.color="#2A282A";
+		};
+	
+		document.getElementById('textcite').style.backgroundColor = 'white';
+		document.getElementById('main-left').style.backgroundColor = 'white';
+		document.getElementById('main-right').style.backgroundColor = '#353262';
+		document.getElementById('intro').style.color = '#3E3C3E';
+  }
+});
