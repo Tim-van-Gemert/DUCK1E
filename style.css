@@ -324,3 +324,7 @@ html, body{
     background-color: #000563;
     border: none;
 }
+
+.question6-buttons > button{
+    height: 200px;
+}

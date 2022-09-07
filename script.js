@@ -19,7 +19,7 @@ function button_question_two() {
     document.getElementById('question-2-text').style.display = 'none';
     document.getElementById('question-3-text').style.display = 'flex';
     document.getElementById('question2').style.marginBottom = '5%';
-    document.getElementById('formblock').style.paddingTop = '25%';
+    document.getElementById('formblock').style.paddingTop = '15%';
     document.getElementById('formblock').style.paddingBottom = '10%';
     document.getElementById('formblock').style.overflow = 'hidden';
     var audio = new Audio('duck-quacking-37392.mp3');
