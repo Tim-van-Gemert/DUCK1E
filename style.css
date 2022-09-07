@@ -328,3 +328,18 @@ html, body{
 .question6-buttons > button{
     height: 200px;
 }
+
+@media only screen and (max-width: 1980px) {
+    .input-fields{
+        height: 250px;
+        font-size: 20px;
+    }
+
+#summary{
+    font-size: 20px; 
+}
+
+.duck-text{
+    font-size: 20px;
+}
+}
