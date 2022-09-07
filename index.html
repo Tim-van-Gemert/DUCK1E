@@ -9,10 +9,11 @@
     <script src="script.js"></script>
 
 
+
       
 </head>
 <body>
-    <div class="header-wrap">
+    <div class="header-wrap" onLoad="quack()">
         <div class="header"><div class="title">DUCK1E</div><button onclick="Darkmode()" id="darkmode_button">D4RKMODE</button></div>
         <div class="belowheader"></div>
     </div>
@@ -22,8 +23,8 @@
         <div class="summary" id="summary">
             <p class="intro" id="intro">Hi, this is DUCK1E!<br> you can always visit him if you are stuck on a bug or issue! Just answer his questions and reflect on your answers afterwards :) </p>
         </div>
-        <div class="formblock">
-            <form>
+        <div class="formblock" id="formblock">
+            <form id="form">
                 <!-- Wat denk je dat het probleem is? -->
                 <textarea class="input-fields" id="question1">
                     
@@ -36,60 +37,77 @@ function reset_animation() {
 }
                     </textarea>
 
-                <!-- Waar in je code denk je dat het probleem is? -->
+                <!-- hat do you think the issue in your code is? -->
                 <textarea class="input-fields" id="question2">input 2</textarea>
 
                 
-                <!-- Waar in je code denk je dat het probleem is? -->
+                <!-- What do you think the issue in your code is? -->
                 <textarea class="input-fields" id="question3">input 3</textarea>
 
 
-                <!-- Zou dit anders opgelost kunnen worden? -->
-                
+                <!-- Do you know a potential different way to solve the problem? -->
                 
 
-                <!-- Heb je mede studenten om hulp gevraagd? -->
+                <!-- Have you tried asking other students? -->
                 <textarea class="input-fields" id="question5">input 5</textarea>
 
 
-                <!-- Kan je verder? -->
+                <!-- Are you able to continu? -->
                 <textarea class="input-fields" id="question6"> input 6</textarea>
 
             </form>
             <div class="buttonblock">
-                <!-- Wat denk je dat het probleem is? -->
+                <!-- Where in your code do you think the issue is? -->
                 <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation()">Next</button>
-                <button class="button form-button" id="button-1-1" onclick="">Its not code related</button>
 
-                <!-- Waar in je code denk je dat het probleem is? -->
+                <!-- What do you think the issue in your code is? -->
                 <button class="button form-button" id="button-2" onclick="button_question_two(), reset_animation()">Next</button>
 
-                <!-- Zou dit anders opgelost kunnen worden? -->
-                <button class="button form-button" id="button-3" onclick="button_question_three(), reset_animation()">Next</button>
-
-                <!-- Heb je mede studenten om hulp gevraagd? -->
-                <div class="buttonblock" id="question4">
-                    <button class="button">Yes</button>
-                    <button class="button">No</button>
+                <!-- Do you know a potential different way to solve the problem?-->
+                <div class="buttonblock" id="question3-buttons">
+                    <button onclick="button_question_four(), reset_animation()" class="button">Yes</button>
+                    <button onclick="button_question_three(), reset_animation()" class="button" >No</button>
                 </div>
 
-                <!-- Kan je verder? -->
-                <button class="button form-button" id="button-5" onclick="button_question_four(), reset_animation()">Next</button>
+                 <!-- Have you tried asking other students?-->
+                <div class="buttonblock" id="question4-buttons">
+                    <button onclick="button_question_four(), reset_animation()" class="button">Yes</button>
+                    <button onclick="button_question_three_one(), reset_animation()" class="button" >No</button>
+                </div>
+
+                <!-- How could solve this problem?
+
+                <! Are you able to continu? -->
+                <div class="buttonblock" id="question5-buttons">
+                    <button href="" onclick="reset_animation()" class="button">Yes</button>
+                    <button onclick="button_question_three(), reset_animation()" class="button" >No</button>
+                </div>
+
+                <div class="buttonblock" id="question6-buttons">
+                    <button onclick="button_question_four(), reset_animation()" class="button">Yes, i understand now </button>
+                    <button onclick="button_question_three_one(), reset_animation()" class="button" >Yes, but the student didn't know the answer.</button>
+                </div>
+
+
             </div>
         </div>
     </div>
     <div class="main-right" >
         <div class="duckblock">
             <div class="speech-box">
-            <div class="duck-text" id="question-1-text">Please Copy and pase your code here!</div> 
+            <div class="duck-text" id="question-1-text">Where in your code do you think the issue is?</div> 
 
-            <div class="duck-text" id="question-2-text">Waar in je code denk je dat het probleem is?</div> 
+            <div class="duck-text" id="question-2-text">What do you think the issue in your code is?</div> 
 
-            <div class="duck-text" id="question-3-text">Zou dit anders opgelost kunnen worden?</div> 
+            <div class="duck-text" id="question-3-text">Do you know a potential different way to solve the problem?</div> 
 
-            <div class="duck-text" id="question-4-text">Heb je mede studenten om hulp gevraagd?</div> 
+            <div class="duck-text" id="question-4-text">Have you tried asking other students?</div> 
 
-            <div class="duck-text" id="question-5-text">Kan je verder?</div> 
+            <div class="duck-text" id="question-5-text">Are you able to continue?</div> 
+
+            <div class="duck-text" id="question-6-text">You should take a look at the problem with a coach</div> 
+
+            <div class="duck-text" id="question-7-text">You should contact other students to see if the can help you with yout issue!</div> 
 
             <div class="textcite" id="textcite"></div>
             </div>
