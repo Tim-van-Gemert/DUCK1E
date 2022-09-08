@@ -145,7 +145,8 @@ html, body{
     font-size: 32px;
     border-bottom-left-radius: 0px !important;
     text-align: left;
-    max-width: 650px;
+    max-width: 650px !important;
+    min-width: 250px !important;
     word-wrap: break-word;
     font-family: "Yu Gothic Light";
 }
@@ -153,7 +154,7 @@ html, body{
 .textcite{
     background-color: white;
     width: 45px;
-    height: 45px;
+    height: 50px;
     position: absolute;
     left: 20%;
     clip-path: polygon(76% 0, 76% 60%, 76% 100%, 63% 81%, 30% 39%, 0% 0%);
@@ -244,7 +245,7 @@ html, body{
 	}
 }
 
-#question2, #question3, #question4, #question5, #question6, #question8 {
+#question2, #question3, #question4, #question5, #question6, #question8, #coachgif, #continuegif {
     display: none;
 }
 
@@ -258,8 +259,16 @@ html, body{
     display: none;
 }
 
+
+
+#question1{
+    padding-top: unset;
+}
+
 .input-fields{
     padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 16px #00000029;
 
@@ -393,3 +402,8 @@ html, body{
 }
 
 
+#coachgif, #continuegif, #stevegif{
+    display: none;
+    width: 80vh;
+    height: 40vh;
+}

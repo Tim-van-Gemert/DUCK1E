@@ -21,7 +21,7 @@
     <div class="mainblock">
     <div class="main-left" id="main-left">
         <div class="summary" id="summary">
-            <p class="intro" id="intro">Hi, this is DUCK1E!<br> you can always visit him if you are stuck on a bug or issue! Just answer his questions and reflect on your answers afterwards :) </p>
+            <p class="intro" id="intro">Hi, this is DUCK1E!<br> you can always visit him if you are stuck on a bug or issue! Just reflect on your answers as you fill in the form :) </p>
         </div>
         <div class="formblock" id="formblock">
             <form id="form">
@@ -29,7 +29,7 @@
                 <textarea class="input-fields" id="question1">
                     
 
-function reset_animation() {
+function reset_animation {
     var el = document.getElementById('duck');
     el.style.animation = 'none';
     el.offsetHeight; /* trigger reflow */
@@ -38,7 +38,9 @@ function reset_animation() {
                     </textarea>
 
                 <!-- hat do you think the issue in your code is? -->
-                <textarea class="input-fields" id="question2">input 2</textarea>
+                <textarea class="input-fields" id="question2">I have looked at the code but im not sure where the problem is. First i thought that i misspelled "document.getElementById('duck')", but that wasn't the case. I have put ; after all lines and used the correct closing tags.
+
+Maybe i haven't programmed the function right? Im still not sure.</textarea>
 
                 
                 <!-- What do you think the issue in your code is? -->
@@ -49,13 +51,23 @@ function reset_animation() {
                 
 
                 <!-- Have you tried asking other students? -->
+                <img src="steve.gif" alt="Coach" id="stevegif">
                 <textarea class="input-fields" id="question5">input 5</textarea>
+
+                <!-- You should go see the coach -->
+                <img src="darthvader gif.gif" alt="Coach" id="coachgif">
+
+                
 
 
                 <!-- Are you able to continu? -->
+                <img src="continue.gif" alt="Coach" id="continuegif">
                 <textarea class="input-fields" id="question6"> input 6</textarea>
 
-                <textarea class="input-fields" id="question8"> input 8</textarea>
+                <textarea class="input-fields" id="question8">I found out that i wrote the function wrong after looking at my other functions. I forgot to put the () tags after the function name.
+
+The code should work after i put the tags in!
+                </textarea>
 
             </form>
             <div class="buttonblock">
@@ -105,17 +117,17 @@ function reset_animation() {
 
             <div class="duck-text" id="question-2-text">What do you think the issue in your code is?</div> 
 
-            <div class="duck-text" id="question-3-text">Do you know a potential different way to solve the problem?</div> 
+            <div class="duck-text" id="question-3-text">Do you know a potential way to solve the problem?</div> 
 
             <div class="duck-text" id="question-4-text">Have you tried asking other students?</div> 
 
-            <div class="duck-text" id="question-5-text">Are you able to continue?</div> 
+            <div class="duck-text" id="question-5-text">Are you able to continue with the excercise?</div> 
 
             <div class="duck-text" id="question-6-text">You should take a look at the problem with a coach</div> 
 
             <div class="duck-text" id="question-7-text">You should contact other students to see if the can help you with yout issue!</div> 
 
-            <div class="duck-text" id="question-8-text">How could solve this problem?</div> 
+            <div class="duck-text" id="question-8-text">How could you solve this problem?</div> 
 
 
             <div class="textcite" id="textcite"></div>
@@ -130,7 +142,7 @@ function reset_animation() {
     </center>
     <div class="footerwrap">
     <div class="abovefooter"></div>
-    <div class="footer p-2">
+    <div class="footer">
         <!-- <div class="credits">GILBERT, TYCHO, TIM</div> -->
     </div>
 </body>

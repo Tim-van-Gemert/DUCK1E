@@ -40,6 +40,9 @@ function button_question_three() {
     document.getElementById('question3-buttons').style.display = 'none';
     document.getElementById('question6-buttons').style.display = 'flex';
     document.getElementById('question-5-text').style.display = 'none';
+    document.getElementById('stevegif').style.display = 'flex';
+    document.getElementById('continuegif').style.display = 'none';
+    document.getElementById('coachgif').style.display = 'none';
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
     document.getElementById("question1").style.pointerEvents = "none";
@@ -54,6 +57,8 @@ function button_question_three_one() {
     document.getElementById('question5-buttons').style.display = 'none';
     document.getElementById('question4-buttons').style.display = 'none';
     document.getElementById('question6-buttons').style.display = 'none';
+    document.getElementById('coachgif').style.display = 'flex';
+    document.getElementById('stevegif').style.display = 'none';
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
 };
@@ -76,6 +81,9 @@ function button_question_four() {
     document.getElementById('question-4-text').style.display = 'none';
     document.getElementById('question-5-text').style.display = 'flex';
      document.getElementById('question5-buttons').style.display = 'flex';
+     document.getElementById('continuegif').style.display = 'flex';
+     document.getElementById('stevegif').style.display = 'none';
+
      var audio = new Audio('duck-quacking-37392.mp3');
      audio.play();
 };
@@ -94,7 +102,7 @@ function button_question_five() {
 function button_question_four_one() {
     document.getElementById('question6-buttons').style.display = 'none';
     document.getElementById('question2').style.display = 'none';
-    document.getElementById('question1').style.display = 'none';
+    document.getElementById('question1').style.display = 'flex';
     document.getElementById('question3').style.display = 'none';
     document.getElementById('formblock').style.overflow = 'hidden';
 
