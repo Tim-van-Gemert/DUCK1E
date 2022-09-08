@@ -7,8 +7,9 @@
 }
 
 html,body {
-    background: linear-gradient(45deg, #000563 20%, #353262 80%) !important; 
+    background: linear-gradient(45deg, #282c82 0%, #353262 100%) !important; 
     height: 100vh;
+    overflow: hidden;
 
 }
 
@@ -269,3 +270,5 @@ body{
     width: auto;
     animation: Duck-vibrate 1s ease-in-out 0s 1 normal forwards;
 }
+
+
