@@ -9,6 +9,7 @@
 html,body {
     background: linear-gradient(45deg, #000563 20%, #353262 80%) !important; 
     height: 100vh;
+    overflow-y: hidden;
 
 }
 

@@ -272,11 +272,10 @@ html, body{
     opacity: 1;
     border: none;
     width: 80vh;
-    font-size: 22px;
     resize: none ;
     font-size: 25px;
 
-    height: 300px;
+    height: 200px !important;
     animation: entrance-question 1s ease 0s 1 normal forwards;
 }
 
@@ -309,7 +308,7 @@ html, body{
     border: none;
     width: 20vh;
     height: 5vh;
-    font-size: 22px;
+    font-size: 20px;
     resize: none ;
     transition: .2s ease-in-out;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -397,7 +396,7 @@ html, body{
 }
 
 .duck-text{
-    font-size: 20px;
+    font-size: 30px;
 }
 }
 

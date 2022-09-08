@@ -57,12 +57,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </div>
 
     <div class="main-login-block">
-    <div class="container">	
+    <div class="container">
+    <img src="DUCK1E.png" class="duck" id="duck"">	
 	<form method="post">
         <input id="username" type="text" placeholder="Enter Username" name="username" required>
     
         <input id="password"  type="password" placeholder="Enter Password" name="password" required>
     
+
         <button type="submit" value="Login">Login</button>
 		</form>
       </div>
