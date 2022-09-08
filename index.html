@@ -26,25 +26,14 @@
         <div class="formblock" id="formblock">
             <form id="form">
                 <!-- Wat denk je dat het probleem is? -->
-                <textarea class="input-fields" id="question1">
-                    
+                <textarea class="input-fields" id="question1" placeholder="Copy and paste your code here!"></textarea>
 
-function reset_animation {
-    var el = document.getElementById('duck');
-    el.style.animation = 'none';
-    el.offsetHeight; /* trigger reflow */
-    el.style.animation = null; 
-}
-                    </textarea>
-
-                <!-- hat do you think the issue in your code is? -->
-                <textarea class="input-fields" id="question2">I have looked at the code but im not sure where the problem is. First i thought that i misspelled "document.getElementById('duck')", but that wasn't the case. I have put ; after all lines and used the correct closing tags.
-
-Maybe i haven't programmed the function right? Im still not sure.</textarea>
+                <!-- what do you think the issue in your code is? -->
+                <textarea class="input-fields" id="question2" placeholder="Insert your answer here." ></textarea>
 
                 
                 <!-- What do you think the issue in your code is? -->
-                <textarea class="input-fields" id="question3">input 3</textarea>
+                <textarea class="input-fields" id="question3"  placeholder="Insert your answer here."></textarea>
 
 
                 <!-- Do you know a potential different way to solve the problem? -->
@@ -52,7 +41,7 @@ Maybe i haven't programmed the function right? Im still not sure.</textarea>
 
                 <!-- Have you tried asking other students? -->
                 <img src="steve.gif" alt="Coach" id="stevegif">
-                <textarea class="input-fields" id="question5">input 5</textarea>
+                <textarea class="input-fields" id="question5"  placeholder="Insert your answere here."></textarea>
 
                 <!-- You should go see the coach -->
                 <img src="darthvader gif.gif" alt="Coach" id="coachgif">
@@ -64,10 +53,7 @@ Maybe i haven't programmed the function right? Im still not sure.</textarea>
                 <img src="continue.gif" alt="Coach" id="continuegif">
                 <textarea class="input-fields" id="question6"> input 6</textarea>
 
-                <textarea class="input-fields" id="question8">I found out that i wrote the function wrong after looking at my other functions. I forgot to put the () tags after the function name.
-
-The code should work after i put the tags in!
-                </textarea>
+                <textarea class="input-fields" id="question8" placeholder="Insert your answere here."></textarea>
 
             </form>
             <div class="buttonblock">
@@ -83,6 +69,13 @@ The code should work after i put the tags in!
                     <button onclick="button_question_three(), reset_animation()" class="button" >No</button>
                 </div>
 
+                <!-- Have you tried to google it?-->
+                    <div class="buttonblock" id="question9-buttons">
+                        <button onclick="button_question_four_one(), reset_animation()" class="button button-long">Yes, i have found the answer</button>
+                        <button onclick="button_question_six(), reset_animation()" class="button button-long" >Yes, but i could not find an answer</button>
+                    </div>
+            
+
                  <!-- Have you tried asking other students?-->
                 <div class="buttonblock" id="question4-buttons">
                     <button onclick="button_question_four(), reset_animation()" class="button">Yes</button>
@@ -92,12 +85,12 @@ The code should work after i put the tags in!
                 <!-- Are you able to continu? -->
                 <div class="buttonblock" id="question5-buttons">
                     <button href="" onclick="reset_animation()" class="button">Yes</button>
-                    <button onclick="button_question_three(), reset_animation()" class="button" >No</button>
+                    <button onclick="button_question_three_two(), reset_animation()" class="button" >No</button>
                 </div>
 
                 <div class="buttonblock" id="question6-buttons">
-                    <button onclick="button_question_four(), reset_animation()" class="button">Yes, i understand now </button>
-                    <button onclick="button_question_three_one(), reset_animation()" class="button" >Yes, but the student didn't know the answer.</button>
+                    <button onclick="button_question_four(), reset_animation()" class="button button-long">Yes, i understand now </button>
+                    <button onclick="button_question_three_one(), reset_animation()" class="button button-long" >Yes, the student didn't know either.</button>
                 </div>
 
                 <!-- How could solve this problem? -->
@@ -128,6 +121,8 @@ The code should work after i put the tags in!
             <div class="duck-text" id="question-7-text">You should contact other students to see if the can help you with yout issue!</div> 
 
             <div class="duck-text" id="question-8-text">How could you solve this problem?</div> 
+
+            <div class="duck-text" id="question-9-text">Have you tried googling it?</div> 
 
 
             <div class="textcite" id="textcite"></div>

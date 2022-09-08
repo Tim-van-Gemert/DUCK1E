@@ -152,6 +152,7 @@ html, body{
 }
 
 .textcite{
+    margin-top: -1%;
     background-color: white;
     width: 45px;
     height: 50px;
@@ -249,21 +250,17 @@ html, body{
     display: none;
 }
 
-#button-2, #button-3, #button-4, #button-5, #button-6, #question3-buttons,  #question4-buttons, #question5-buttons, #question6-buttons, #question7-buttons, #question8-buttons {
+#button-2, #button-3, #button-4, #button-5, #button-6, #question3-buttons,  #question4-buttons, #question5-buttons, #question6-buttons, #question7-buttons, #question8-buttons, #question9-buttons {
     display: none;
     justify-content: space-around;
 }
 
 
-#question-2-text, #question-3-text, #question-4-text, #question-5-text, #question-6-text, #question-7-text, #question-8-text {
+#question-2-text, #question-3-text, #question-4-text, #question-5-text, #question-6-text, #question-7-text, #question-8-text, #question-9-text {
     display: none;
 }
 
 
-
-#question1{
-    padding-top: unset;
-}
 
 .input-fields{
     padding-left: 5%;
@@ -406,4 +403,15 @@ html, body{
     display: none;
     width: 80vh;
     height: 40vh;
+}
+
+.button-long{
+    margin-top: unset !important;
+    width: 35vh;
+    height: 5vh;
+    margin-top: 5% !important;
+}
+
+#question2{
+    margin-bottom: unset !important;
 }
