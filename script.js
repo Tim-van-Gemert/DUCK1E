@@ -30,19 +30,13 @@ function button_question_two() {
 
 
 function button_question_three() {
-    document.getElementById('formblock').style.overflow = 'hidden';
-    document.getElementById('question2').style.display = 'none';
-    document.getElementById('question1').style.display = 'none';
-    document.getElementById('question3').style.display = 'none';
     document.getElementById('question-3-text').style.display = 'none';
-    document.getElementById('question-4-text').style.display = 'flex';
-    document.getElementById('question5-buttons').style.display = 'none';
     document.getElementById('question3-buttons').style.display = 'none';
-    document.getElementById('question6-buttons').style.display = 'flex';
-    document.getElementById('question-5-text').style.display = 'none';
+    document.getElementById('question9-buttons').style.display = 'flex';
+    document.getElementById('question-9-text').style.display = 'flex';
+    document.getElementById("question1").style.pointerEvents = "none";
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
-    document.getElementById("question1").style.pointerEvents = "none";
 };
 
 
@@ -54,9 +48,35 @@ function button_question_three_one() {
     document.getElementById('question5-buttons').style.display = 'none';
     document.getElementById('question4-buttons').style.display = 'none';
     document.getElementById('question6-buttons').style.display = 'none';
+    document.getElementById('coachgif').style.display = 'flex';
+    document.getElementById('stevegif').style.display = 'none';
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
 };
+
+
+function button_question_three_two() {
+    document.getElementById('question-3-text').style.display = 'none';
+    document.getElementById('question3-buttons').style.display = 'none';
+    document.getElementById('question9-buttons').style.display = 'none';
+    document.getElementById('question-9-text').style.display = 'none';
+    document.getElementById("question1").style.pointerEvents = "none";
+    document.getElementById('formblock').style.overflow = 'hidden';
+    document.getElementById('continuegif').style.display = 'none';
+    document.getElementById('question-4-text').style.display = 'none';
+    document.getElementById('question-6-text').style.display = 'flex';
+    document.getElementById('question-5-text').style.display = 'none';
+    document.getElementById('question5-buttons').style.display = 'none';
+    document.getElementById('question4-buttons').style.display = 'none';
+    document.getElementById('question6-buttons').style.display = 'none';
+    document.getElementById('coachgif').style.display = 'flex';
+    document.getElementById('stevegif').style.display = 'none';
+    var audio = new Audio('duck-quacking-37392.mp3');
+    audio.play();
+};
+
+
+
 
 
 
@@ -65,16 +85,45 @@ function button_question_four() {
     document.getElementById('question2').style.display = 'none';
     document.getElementById('question1').style.display = 'none';
     document.getElementById('question3').style.display = 'none';
+    document.getElementById('question8-buttons').style.display = 'none';
+    document.getElementById('question-8-text').style.display = 'none';
+    document.getElementById('question8').style.display = 'none';
     document.getElementById('formblock').style.overflow = 'hidden';
     document.getElementById('question5-buttons').style.display = 'flex';
     document.getElementById('question3-buttons').style.display = 'none';
     document.getElementById('question-4-text').style.display = 'none';
     document.getElementById('question-3-text').style.display = 'none';
     document.getElementById('question-4-text').style.display = 'none';
+
     document.getElementById('question-5-text').style.display = 'flex';
      document.getElementById('question5-buttons').style.display = 'flex';
+     document.getElementById('continuegif').style.display = 'flex';
+     document.getElementById('stevegif').style.display = 'none';
+
      var audio = new Audio('duck-quacking-37392.mp3');
      audio.play();
+};
+
+function button_question_four_one() {
+    document.getElementById('question6-buttons').style.display = 'none';
+    document.getElementById('question3-buttons').style.display = 'none';
+    document.getElementById('question-3-text').style.display = 'none';
+    document.getElementById('question9-buttons').style.display = 'none';
+    document.getElementById('question-9-text').style.display = 'none';
+
+    document.getElementById('question2').style.display = 'none';
+    document.getElementById('question1').style.display = 'flex';
+    document.getElementById('question3').style.display = 'none';
+    document.getElementById('formblock').style.overflow = 'hidden';
+    document.getElementById('question8-buttons').style.justifyContent = 'flex-start';
+    document.getElementById('question8-buttons').style.display = 'flex';
+    document.getElementById('question-8-text').style.display = 'flex';
+    document.getElementById('question8').style.display = 'flex';
+    document.getElementById('question9-buttons').style.display = 'none';
+    document.getElementById('question-9-text').style.display = 'none';
+
+    var audio = new Audio('duck-quacking-37392.mp3');
+    audio.play();
 };
 
 
@@ -88,6 +137,30 @@ function button_question_five() {
     audio.play();
 };
 
+
+
+function button_question_six() {
+
+    document.getElementById('question9-buttons').style.display = 'none';
+    document.getElementById('question-9-text').style.display = 'none';
+
+    document.getElementById('formblock').style.overflow = 'hidden';
+    document.getElementById('question2').style.display = 'none';
+    document.getElementById('question1').style.display = 'none';
+    document.getElementById('question3').style.display = 'none';
+    document.getElementById('question-3-text').style.display = 'none';
+    document.getElementById('question-4-text').style.display = 'flex';
+    document.getElementById('question5-buttons').style.display = 'none';
+    document.getElementById('question3-buttons').style.display = 'none';
+    document.getElementById('question6-buttons').style.display = 'flex';
+    document.getElementById('question-5-text').style.display = 'none';
+    document.getElementById('stevegif').style.display = 'flex';
+    document.getElementById('continuegif').style.display = 'none';
+    document.getElementById('coachgif').style.display = 'none';
+    var audio = new Audio('duck-quacking-37392.mp3');
+    audio.play();
+};
+
 function reset_animation() {
     var el = document.getElementById('duck');
     el.style.animation = 'none';
@@ -97,6 +170,8 @@ function reset_animation() {
 
 function succes() {
 window.location.href = "eindscherm.html";
+var audio = new Audio('duck-quacking-37392.mp3');
+audio.play();
 }
 
 function Darkmode(){

@@ -12,7 +12,6 @@
     <title>Speech To Text</title>
   </head>
   <body class="container pt-5 bg-dark">
-    <button id="btn">Click me</button>
 
 <div id="myDIV">
   This is my DIV element.
@@ -23,7 +22,7 @@
       <select class="form-select bg-secondary text-light mt-2" id="select_dialect"></select>
     </div>
     <h2 class="mt-4 text-light">Transcript</h2>
-    <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;">
+    <div contenteditable="true" class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;">
       <span id="final" class="text-light"></span>
       <span id="interim" class="text-secondary"></span>
     </div>
@@ -33,20 +32,16 @@
       <p id="status" class="lead mt-3 text-light" style="display: none">Listenting ...</p>
     </div>
   </body>
+  <style>div.editable {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+strong {
+  font-weight: bold;
+}</style>
   <script src="./language.js"></script>
 <script src="speechRecognition.js"></script>
-<script>
-const btn = document.getElementById('btn');
-
-// ✅ Toggle button text on click
-btn.addEventListener('click', function handleClick() {
-  const initialText = 'Click me';
-
-  if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-    btn.textContent = 'Button clicked';
-  } else {
-    btn.textContent = initialText;
-  }
-});
-</script>
 </html>
