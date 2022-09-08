@@ -297,8 +297,9 @@ html, body{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
+    padding-left: 5%;
 
 
 }
@@ -344,7 +345,7 @@ html, body{
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    padding-left: 25% ;
+    padding-left: 15% ;
     animation: FadeInSummary 1s ease 0s 1 normal forwards;
 }
 
