@@ -5,19 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+      
 </head>
 <body>
-
-    <div class="header-wrap">
-        <div class="header padding-2"></div>
-        <div class="belowheader text-right "></div>
+    <div class="header-wrap" onLoad="quack()">
+        <div class="header"><div class="title">DUCK1E</div><button id="darkmode_button">D4RKMODE</button></div>
+        <div class="belowheader"></div>
     </div>
-    
+    <center>
+    <div class="mainblock">
+    <div class="main-left" id="main-left">
+        <div class="summary" id="summary">
+            <p class="intro" id="intro">Hi, this is DUCK1E!<br> you can always visit him if you are stuck on a bug or issue! Just answer his questions and reflect on your answers afterwards :) </p>
+        </div>
+        <div class="formblock" id="formblock">
+			<div class="formblock" id="formblock">
+				<form id="form">
+					<!-- Wat denk je dat het probleem is? -->
+					<textarea class="input-fields" id="question1" placeholder="Copy and paste your code here!"></textarea>
+	
+					<!-- what do you think the issue in your code is? -->
+					<textarea class="input-fields" id="question2" placeholder="Insert your answer here." ></textarea>
+	
+					
+					<!-- What do you think the issue in your code is? -->
+					<textarea class="input-fields" id="question3"  placeholder="Insert your answer here."></textarea>
+	
+	
+					<!-- Do you know a potential different way to solve the problem? -->
+					
+	
+					<!-- Have you tried asking other students? -->
+					<img src="steve.gif" alt="Coach" id="stevegif">
+					<textarea class="input-fields" id="question5"  placeholder="Insert your answere here."></textarea>
+	
+					<!-- You should go see the coach -->
+					<img src="darthvader gif.gif" alt="Coach" id="coachgif">
+	
+					
+	
+	
+					<!-- Are you able to continu? -->
+					<img src="continue.gif" alt="Coach" id="continuegif">
+					<textarea class="input-fields" id="question6"> input 6</textarea>
+	
+					<textarea class="input-fields" id="question8" placeholder="Insert your answere here."></textarea>
+	
+				</form>
+			<div class="buttonblock">
+                <!-- Where in your code do you think the issue is? -->
+                <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation()">Next</button>
 
+                <!-- What do you think the issue in your code is? -->
+                <button class="button form-button" id="button-2" onclick="button_question_two(), reset_animation()">Next</button>
+
+                <!-- Do you know a potential different way to solve the problem?-->
+                <div class="buttonblock" id="question3-buttons">
+                    <button onclick="button_question_four_one(), reset_animation()" class="button">Yes</button>
+                    <button onclick="button_question_three(), reset_animation()" class="button" >No</button>
+                </div>
+
+                <!-- Have you tried to google it?-->
+                    <div class="buttonblock" id="question9-buttons">
+                        <button onclick="button_question_four_one(), reset_animation()" class="button button-long">Yes, i have found the answer</button>
+                        <button onclick="button_question_six(), reset_animation()" class="button button-long" >Yes, but i could not find an answer</button>
+                    </div>
+            
+
+                 <!-- Have you tried asking other students?-->
+                <div class="buttonblock" id="question4-buttons">
+                    <button onclick="button_question_four(), reset_animation()" class="button">Yes</button>
+                    <button onclick="button_question_three_one(), reset_animation()" class="button" >No</button>
+                </div>
+
+                <!-- Are you able to continu? -->
+                <div class="buttonblock" id="question5-buttons">
+                    <button href="" onclick="reset_animation(), succes()" class="button">Yes</button>
+                    <button onclick="button_question_three_two(), reset_animation()" class="button" >No</button>
+                </div>
+
+                <div class="buttonblock" id="question6-buttons">
+                    <button onclick="button_question_four(), reset_animation()" class="button button-long">Yes, i understand now </button>
+                    <button onclick="button_question_three_one(), reset_animation()" class="button button-long" >Yes, the student didn't know either.</button>
+                </div>
+
+                <!-- How could solve this problem? -->
+                <div class="buttonblock" id="question8-buttons">
+                    <button class="button form-button" id="button-8" onclick="button_question_four(), reset_animation()">Next</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+	</div>
+    <div class="main-right" id="main-right">
+        <div class="duckblock">
+            <div class="speechwrap">
+            <div class="speech-box">
+            <div class="duck-text" id="question-1-text">Where in your code do you think the issue is located?</div> 
+
+            <div class="duck-text" id="question-2-text">What do you think the issue in your code is?</div> 
+
+            <div class="duck-text" id="question-3-text">Do you know a potential way to solve the problem?</div> 
+
+            <div class="duck-text" id="question-4-text">Have you tried asking other students?</div> 
+
+            <div class="duck-text" id="question-5-text">Are you able to continue with the excercise?</div> 
+
+            <div class="duck-text" id="question-6-text">You should take a look at the problem with a coach</div> 
+
+            <div class="duck-text" id="question-7-text">You should contact other students to see if the can help you with yout issue!</div> 
+
+            <div class="duck-text" id="question-8-text">How could you solve this problem?</div> 
+
+            <div class="duck-text" id="question-9-text">Have you tried googling it?</div> 
+
+
+            <div class="textcite" id="textcite"></div>
+            </div></div>
+            <div class="duckwrap">
+
+            <img src="DUCK1E.png" class="duck" id="duck"">
+            </div>
+        </div>
+    </div>
+    </div>
+    </center>
     <div class="footerwrap">
     <div class="abovefooter"></div>
     <div class="footer p-2">
     </div>
+	<script src="script.js"></script>
 </body>
 </html>
