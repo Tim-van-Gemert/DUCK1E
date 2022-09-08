@@ -65,6 +65,9 @@ var langs =
 let select_language = document.querySelector('#select_language');
 let select_dialect = document.querySelector('#select_dialect');
 
+let select_language2 = document.querySelector('#select_language2');
+let select_dialect2 = document.querySelector('#select_dialect2');
+
 for (var i = 0; i < langs.length; i++) {
   select_language.options[i] = new Option(langs[i][0], i);
 }
@@ -82,4 +85,24 @@ function updateCountry() {
     select_dialect.options.add(new Option(list[i][1], list[i][0]));
   }
   select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
+}
+
+
+for (var i = 0; i < langs.length; i++) {
+  select_language2.options[i] = new Option(langs[i][0], i);
+}
+
+select_language2.selectedIndex = 6;
+updateCountry2();
+select_dialect2.selectedIndex = 6;
+
+function updateCountry2() {
+  for (var i = select_dialect2.options.length - 1; i >= 0; i--) {
+    select_dialect2.remove(i);
+  }
+  var list = langs[select_language2.selectedIndex];
+  for (var i = 1; i < list.length; i++) {
+    select_dialect2.options.add(new Option(list[i][1], list[i][0]));
+  }
+  select_dialect2.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
 }

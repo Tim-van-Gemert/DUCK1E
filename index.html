@@ -25,21 +25,24 @@
         <div class="formblock" id="formblock">
 			<div class="formblock" id="formblock">
 				<form id="form">
-					<!-- Wat denk je dat het probleem is? -->
+
 					<textarea class="input-fields" id="question1" placeholder="Copy and paste your code here!"></textarea>
 	
-					<!-- what do you think the issue in your code is? -->
-					<textarea class="input-fields" id="question2" placeholder="Insert your answer here." ></textarea>
+
+                    <div placeholder="Insert your answer here." contenteditable="true" class="input-fields" id="question2">
+                      <span id="final" class="Speech-box"></span>
+                      <span id="interim" class="Speech-box"></span>
+                    </div>
+
+                    <div placeholder="Insert your answer here." contenteditable="true" class="input-fields" id="question8">
+                        <span id="final2" class="Speech-box"></span>
+                        <span id="interim2" class="Speech-box"></span>
+                      </div>
 	
 					
-					<!-- What do you think the issue in your code is? -->
+		
 					<textarea class="input-fields" id="question3"  placeholder="Insert your answer here."></textarea>
 	
-	
-					<!-- Do you know a potential different way to solve the problem? -->
-					
-	
-					<!-- Have you tried asking other students? -->
 					<img src="steve.gif" alt="Coach" id="stevegif">
 					<textarea class="input-fields" id="question5"  placeholder="Insert your answere here."></textarea>
 	
@@ -52,16 +55,26 @@
 					<!-- Are you able to continu? -->
 					<img src="continue.gif" alt="Coach" id="continuegif">
 					<textarea class="input-fields" id="question6"> input 6</textarea>
-	
-					<textarea class="input-fields" id="question8" placeholder="Insert your answere here."></textarea>
+
 	
 				</form>
-			<div class="buttonblock">
+			<div class="buttonblock" id="buttonblock">
                 <!-- Where in your code do you think the issue is? -->
                 <button class="button form-button" id="button-1" onclick="button_question_one(), reset_animation()">Next</button>
 
                 <!-- What do you think the issue in your code is? -->
+
                 <button class="button form-button" id="button-2" onclick="button_question_two(), reset_animation()">Next</button>
+                <div  id="div_language" >
+                    <select class="button-speech" id="select_language" onchange="updateCountry()"></select>
+                    <select class="button-speech" id="select_dialect"></select>
+                </div>
+                <div>
+                    <button class="button-speech" id="start">Start</button>
+                    <button class="button-speech" id="stop">Stop</button>
+                    <p id="status"  class="listening">Listenting ...</p>
+                </div>
+
 
                 <!-- Do you know a potential different way to solve the problem?-->
                 <div class="buttonblock" id="question3-buttons">
@@ -96,6 +109,16 @@
                 <!-- How could solve this problem? -->
                 <div class="buttonblock" id="question8-buttons">
                     <button class="button form-button" id="button-8" onclick="button_question_four(), reset_animation()">Next</button>
+                    
+                <div  id="div_language" >
+                        <select class="button-speech" id="select_language2" onchange="updateCountry2()"></select>
+                        <select class="button-speech" id="select_dialect2"></select>
+                </div>
+                <div>
+                    <button class="button-speech" id="start2">Start</button>
+                    <button class="button-speech" id="stop2">Stop</button>
+                    <p id="status2"  class="listening">Listenting ...</p>
+                </div>
                 </div>
 
 
@@ -141,5 +164,7 @@
     <div class="footer p-2">
     </div>
 	<script src="script.js"></script>
+    <script src="speechRecognition.js"></script>
+    <script src="language.js"></script>
 </body>
 </html>

@@ -9,6 +9,12 @@ function button_question_one() {
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
     document.getElementById("question1").style.pointerEvents = "none";
+    document.getElementById('start').style.display = 'flex';
+    document.getElementById('stop').style.display = 'flex';
+    document.getElementById('select_dialect').style.display = 'flex';
+    document.getElementById('select_language').style.display = 'flex';
+
+    document.getElementById('buttonblock').style.justifyContent = 'space-around';
 };
 
 
@@ -25,6 +31,14 @@ function button_question_two() {
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
     document.getElementById("question1").style.pointerEvents = "none";
+
+
+    document.getElementById('start').style.display = 'none';
+    document.getElementById('stop').style.display = 'none';
+    document.getElementById('select_dialect').style.display = 'none';
+    document.getElementById('select_language').style.display = 'none';
+
+    document.getElementById('buttonblock').style.justifyContent = 'start';
 };
 
 
@@ -124,6 +138,13 @@ function button_question_four_one() {
 
     var audio = new Audio('duck-quacking-37392.mp3');
     audio.play();
+
+    document.getElementById('start2').style.display = 'flex';
+    document.getElementById('stop2').style.display = 'flex';
+    document.getElementById('select_dialect2').style.display = 'flex';
+    document.getElementById('select_language2').style.display = 'flex';
+
+    document.getElementById('question8-buttons').style.justifyContent = 'space-around';
 };
 
 
@@ -231,6 +252,20 @@ btn.addEventListener('click', function handleClick() {
         questionfields[i].style.color="white";
     };
 
+    button_speechcolor = document.getElementsByClassName('button-speech');
+    for (var i = 0; i < button_speechcolor.length; i++) {
+        button_speechcolor[i].style.backgroundColor="#3E3C3E";
+        button_speechcolor[i].style.color="white";
+    }
+
+    
+    listening = document.getElementsByClassName('listening');
+    for (var i = 0; i < listening.length; i++) {
+        listening[i].style.backgroundColor="#3E3C3E";
+        listening[i].style.color="white";
+    }
+
+
     document.getElementById('textcite').style.backgroundColor = '#2A282A';
     document.getElementById('main-left').style.backgroundColor = '#2A282A';
     document.getElementById('main-right').style.backgroundColor = '#353231';
@@ -245,6 +280,20 @@ btn.addEventListener('click', function handleClick() {
 			buttoncolor[i].style.backgroundColor="white";
 			buttoncolor[i].style.color="#3E3C3E";
 		}
+
+        button_speechcolor = document.getElementsByClassName('button-speech');
+		for (var i = 0; i < button_speechcolor.length; i++) {
+			button_speechcolor[i].style.backgroundColor="white";
+			button_speechcolor[i].style.color="#3E3C3E";
+		}
+
+        listening = document.getElementsByClassName('listening');
+        for (var i = 0; i < listening.length; i++) {
+            listening[i].style.backgroundColor="white";
+            listening[i].style.color="black";
+        }
+    
+
 	
 		fieldcolor = document.getElementsByClassName('input-fields');
 		for (var i = 0; i < fieldcolor.length; i++) {

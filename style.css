@@ -327,7 +327,7 @@ html, body{
 
 .button:hover{
     transform: scale(1.05);
-    background-color: #353262;
+    background-color: #353262 !important;
     color: white;
 }
 
@@ -337,6 +337,8 @@ html, body{
 .buttonblock{
     width: 80vh;
     display: flex;
+    /* justify-content: space-around; */
+    align-items: baseline;
 }
 
 .summary{
@@ -415,4 +417,77 @@ html, body{
 
 #question2{
     margin-bottom: unset !important;
+}
+
+.button-speech{
+    color: black;
+    display: none;
+    border: none;
+    width: 20vh;
+    height: 5vh;
+    font-size: 22px;
+    resize: none ;
+    transition: .2s ease-in-out;
+    box-shadow: 0px 3px 16px #00000029;
+    margin-top: 5%;
+    opacity: 1;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color:white ;
+    margin-right: 5% !important;
+    animation: entrance-question 1s ease 0s 1 normal forwards;
+}
+
+.Speech-box{
+    font-size: 25px;
+    font-family: "Yu Gothic Light";
+}
+
+#start:hover{
+    background-color: lightgreen !important;
+    color: white !important;
+}
+
+#stop:hover{
+    background-color: red !important;
+    color: white !important;
+}
+
+#select_dialect:hover, #select_language:hover{
+background-color: #353262 !important;
+color: white !important;
+}
+
+
+#select_dialect2:hover, #select_language2:hover{
+    background-color: #353262 !important;
+    color: white !important;
+}
+    
+
+.Speech-box{
+    font-size: 25px;
+    font-family: "Yu Gothic Light";
+}
+
+#start2:hover{
+    background-color: lightgreen !important;
+    color: white !important;
+}
+
+#stop2:hover{
+    background-color: red !important;
+    color: white !important;
+}
+
+#status, #status2 {
+    display: none;
+}
+
+.listening{
+    font-family: "Yu Gothic Light";
+    font-size: 25px !important; 
+    display: none;
 }
